@@ -47,8 +47,9 @@ class HomePage(QWidget):
 
         header_row = QHBoxLayout()
         self.header = PageHeader(
-            "Universal Android Debloater",
-            "Pick a device profile, choose what goes and apply. No root required.",
+            "DroidPrune",
+            "Profile-based Android debloater. Pick a profile, choose what goes and "
+            "apply — no root required.",
         )
         header_row.addWidget(self.header, 1)
         self.refresh_button = PushButton("Refresh")

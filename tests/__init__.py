@@ -1,1 +1,1 @@
-"""Tests and development helpers for Universal Android Debloater."""
+"""Tests and development helpers for DroidPrune."""

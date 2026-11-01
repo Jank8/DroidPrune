@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.0 beta — 2026-11-01
+## DroidPrune 1.0.0 beta — 2026-11-01
 
 First public release.
 

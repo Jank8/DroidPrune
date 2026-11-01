@@ -21,12 +21,12 @@ os.environ["UAD_DISABLE_MICA"] = "1"
 from PySide6.QtCore import QEventLoop, QTimer  # noqa: E402
 from PySide6.QtWidgets import QApplication  # noqa: E402
 
-import debloater.core.controller as controller_module  # noqa: E402
-from debloater.core.controller import Controller  # noqa: E402
-from debloater.core.models import Level, Profile, State  # noqa: E402
-from debloater.paths import PROFILES_DIR  # noqa: E402
-from debloater.ui import theme  # noqa: E402
-from debloater.ui.main_window import MainWindow  # noqa: E402
+import droidprune.core.controller as controller_module  # noqa: E402
+from droidprune.core.controller import Controller  # noqa: E402
+from droidprune.core.models import Level, Profile, State  # noqa: E402
+from droidprune.paths import PROFILES_DIR  # noqa: E402
+from droidprune.ui import theme  # noqa: E402
+from droidprune.ui.main_window import MainWindow  # noqa: E402
 from tests.fake_adb import FakeAdb  # noqa: E402
 
 

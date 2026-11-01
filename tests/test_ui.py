@@ -22,13 +22,13 @@ sys.path.insert(0, str(ROOT))
 from PySide6.QtCore import QEventLoop, QTimer  # noqa: E402
 from PySide6.QtWidgets import QApplication  # noqa: E402
 
-import debloater.core.controller as controller_module  # noqa: E402
-from debloater.core.controller import Controller  # noqa: E402
-from debloater.core.models import Action, Level, Profile, State  # noqa: E402
-from debloater.paths import PROFILES_DIR  # noqa: E402
-from debloater.ui import theme  # noqa: E402
-from debloater.ui.pages.home import HomePage  # noqa: E402
-from debloater.ui.pages.packages import PackagesPage  # noqa: E402
+import droidprune.core.controller as controller_module  # noqa: E402
+from droidprune.core.controller import Controller  # noqa: E402
+from droidprune.core.models import Action, Level, Profile, State  # noqa: E402
+from droidprune.paths import PROFILES_DIR  # noqa: E402
+from droidprune.ui import theme  # noqa: E402
+from droidprune.ui.pages.home import HomePage  # noqa: E402
+from droidprune.ui.pages.packages import PackagesPage  # noqa: E402
 from tests.fake_adb import FakeAdb  # noqa: E402
 
 APP = QApplication.instance() or QApplication(sys.argv)

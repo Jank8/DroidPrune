@@ -192,7 +192,7 @@ class Journal:
 
     def export_text(self, run: RunSummary) -> str:
         lines = [
-            f"Universal Android Debloater - {run.kind_label} log",
+            f"DroidPrune - {run.kind_label} log",
             f"Run     : {run.run_id}",
             f"Started : {run.started.strftime('%Y-%m-%d %H:%M:%S')}",
             f"Profile : {run.profile_name}",

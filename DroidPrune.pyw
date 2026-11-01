@@ -1,8 +1,8 @@
-"""Universal Android Debloater - double-click launcher.
+"""DroidPrune - double-click launcher.
 
 A fresh Python installation has no PySide6 or Fluent Widgets, so the launcher
 installs the two runtime dependencies with a small Tk progress window before
-importing the application.  Everything else lives in the ``debloater`` package.
+importing the application.  Everything else lives in the ``droidprune`` package.
 """
 
 from __future__ import annotations
@@ -48,7 +48,7 @@ def _install_dependencies(packages: list[str]) -> bool:
         return result.returncode == 0
 
     window = tk.Tk()
-    window.title("Universal Android Debloater - installing dependencies")
+    window.title("DroidPrune - installing dependencies")
     window.geometry("580x160")
     window.configure(bg="#141414")
     window.resizable(False, False)
@@ -100,7 +100,7 @@ def _fatal(message: str) -> None:
             import ctypes
 
             ctypes.windll.user32.MessageBoxW(
-                0, message, "Universal Android Debloater", 0x10
+                0, message, "DroidPrune", 0x10
             )
         except Exception:
             pass
@@ -122,7 +122,7 @@ def main() -> int:
         importlib.invalidate_caches()
 
     try:
-        from debloater.app import main as run
+        from droidprune.app import main as run
     except Exception:
         _fatal("The application could not be imported:\n\n" + traceback.format_exc())
         return 1

@@ -14,8 +14,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from debloater.core.profiles import ProfileStore  # noqa: E402
-from debloater.paths import PROFILES_DIR  # noqa: E402
+from droidprune.core.profiles import ProfileStore  # noqa: E402
+from droidprune.paths import PROFILES_DIR  # noqa: E402
 
 
 def main() -> int:

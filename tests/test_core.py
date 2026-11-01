@@ -13,14 +13,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from debloater.core.adb import Adb  # noqa: E402
-from debloater.core.engine import Engine, WorkItem  # noqa: E402
-from debloater.core.journal import Journal  # noqa: E402
-from debloater.core.models import (Action, Category, Level, MatchRules,  # noqa: E402
+from droidprune.core.adb import Adb  # noqa: E402
+from droidprune.core.engine import Engine, WorkItem  # noqa: E402
+from droidprune.core.journal import Journal  # noqa: E402
+from droidprune.core.models import (Action, Category, Level, MatchRules,  # noqa: E402
                                    Package, Profile, ProfileError, State)
-from debloater.core.profiles import ProfileStore  # noqa: E402
-from debloater.core.selection import SelectionStore  # noqa: E402
-from debloater.paths import PROFILES_DIR  # noqa: E402
+from droidprune.core.profiles import ProfileStore  # noqa: E402
+from droidprune.core.selection import SelectionStore  # noqa: E402
+from droidprune.paths import PROFILES_DIR  # noqa: E402
 from tests.fake_adb import FakeAdb  # noqa: E402
 
 PROFILE_PATH = PROFILES_DIR / "oneplus15_oos16.json"

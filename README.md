@@ -1,8 +1,9 @@
-# Universal Android Debloater 1.0.0 beta
+# DroidPrune 1.0.0 beta
 
-A portable Windows application that removes or freezes preinstalled Android bloat
-over ADB — no root, no custom ROM, no command line. Pick a **device profile**, tick
-what you do not need, apply, reboot. Everything stays reversible for user 0.
+**DroidPrune** is a portable Windows application that removes or freezes preinstalled
+Android bloat over ADB — no root, no custom ROM, no command line. Pick a **device
+profile**, tick what you do not need, apply, reboot. Everything stays reversible for
+user 0.
 
 ![Version](https://img.shields.io/badge/version-1.0.0_beta-orange)
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
@@ -12,6 +13,8 @@ what you do not need, apply, reboot. Everything stays reversible for user 0.
 
 > **1.0.0 beta** — first public release. The core workflow is complete and tested;
 > profiles for more phone families are welcome.
+
+**Repository:** https://github.com/Jank8/DroidPrune
 
 ![Home](docs/screenshots/home.png)
 
@@ -69,7 +72,7 @@ keep several in the folder, or snapshot a connected device and start from there.
 
 ## Quick start
 
-1. Double-click **`Debloater.pyw`**. On a fresh Python installation it installs
+1. Double-click **`DroidPrune.pyw`**. On a fresh Python installation it installs
    `PySide6` and `PySide6-Fluent-Widgets` with a small progress window, then starts.
 2. Connect the phone and accept the **Allow USB debugging** prompt.
 3. Pick the profile (the app suggests one when its `match` rules fit the phone).
@@ -83,7 +86,7 @@ Command line equivalent:
 
 ```powershell
 python -m pip install -r requirements.txt
-python Debloater.pyw
+python DroidPrune.pyw
 ```
 
 ---
@@ -172,9 +175,9 @@ python tools/validate_profiles.py
 | **CAUTION** | You lose a specific feature — the table note says which one. Read it before toggling. |
 | **RISKY** | Known or likely links to AOD, Live Alerts, networking, OTA updates or battery management. Advanced users only. |
 
-Levels are judgement calls collected from Universal Android Debloater (UAD), XDA
-threads, DroidWin and community reports. They are a guide, not a guarantee — you
-can always restore.
+Levels are judgement calls collected from the upstream Universal Android Debloater
+(UAD), XDA threads, DroidWin and community reports. They are a guide, not a
+guarantee — you can always restore.
 
 ---
 
@@ -213,8 +216,8 @@ touched by either operation.
 ## Project layout
 
 ```
-Debloater.pyw                 double-click launcher + dependency bootstrap
-debloater/
+DroidPrune.pyw                 double-click launcher + dependency bootstrap
+droidprune/
   app.py                      QApplication wiring, theme bootstrap
   paths.py                    portable folders, profile seeding
   core/
@@ -246,7 +249,7 @@ docs/                         profile format and screenshots
 ```powershell
 python -m pip install -r requirements.txt
 
-python Debloater.pyw                 # run
+python DroidPrune.pyw                 # run
 python -m unittest discover -s tests -p "test_*.py" -v
 
 python tests/preview_ui.py           # screenshots of every page -> shots/

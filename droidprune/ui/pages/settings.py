@@ -257,8 +257,8 @@ class SettingsPage(QWidget):
         layout.addWidget(body)
 
         credits = CaptionLabel(
-            "Package research: Universal Android Debloater (UAD), XDA Forums, "
-            "DroidWin and community reports.  ·  "
+            "Package research: upstream Universal Android Debloater (UAD), XDA "
+            "Forums, DroidWin and community reports.  ·  "
             "UI built with PySide6 and PySide6-Fluent-Widgets."
         )
         credits.setWordWrap(True)

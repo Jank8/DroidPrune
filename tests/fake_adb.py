@@ -1,4 +1,4 @@
-"""A deterministic stand-in for :class:`debloater.core.adb.Adb`.
+"""A deterministic stand-in for :class:`droidprune.core.adb.Adb`.
 
 Used by the test-suite and by the screenshot preview: it simulates a connected
 OnePlus 15 with a realistic mix of active, disabled, removed and absent
@@ -9,8 +9,8 @@ from __future__ import annotations
 
 from dataclasses import replace
 
-from debloater.core.adb import OperationResult, PackageInventory
-from debloater.core.models import Action, Device, DeviceInfo, Profile, State
+from droidprune.core.adb import OperationResult, PackageInventory
+from droidprune.core.models import Action, Device, DeviceInfo, Profile, State
 
 SERIAL = "R5CT123ABCD"
 
