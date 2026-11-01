@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Build output
+build/
+dist/
+*.spec
+
+# Local application data (selections, journal, logs)
+data/
+
+# Development screenshots and logs
+shots/
+*.log

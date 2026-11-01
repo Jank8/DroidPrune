@@ -1,0 +1,2141 @@
+{
+  "schema": 1,
+  "id": "oneplus15_oos16",
+  "name": "OnePlus 15 - OxygenOS 16",
+  "description": "Factory package set of the OnePlus 15 running OxygenOS 16. Safety levels and notes were carried over from the original project and community research (UAD, XDA, DroidWin).",
+  "device": {
+    "brand": "OnePlus",
+    "model": "OnePlus 15",
+    "os": "OxygenOS 16",
+    "android": "16",
+    "build": "BP2A.250605.015"
+  },
+  "match": {
+    "brand": "(?i)oneplus",
+    "model": "(?i)(oneplus\\s*15|CPH27\\d{2})",
+    "android": "^16"
+  },
+  "source": "Package dump of a OnePlus 15 (OxygenOS 16, build BP2A.250605.015), originally maintained in the PowerShell TUI that predates this application. Descriptions and safety notes come from community research.",
+  "categories": [
+    {
+      "id": "3rd-party",
+      "name": "3rd-Party Preloads",
+      "description": "Preinstalled partner apps and installer stubs. Most of these are safe to remove and often reinstall themselves if left alone."
+    },
+    {
+      "id": "google",
+      "name": "Google Bloat",
+      "description": "Google apps and services that can be replaced or simply are not used. Read the CAUTION notes: some of them are tie-ins for core features."
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft / Link to Windows",
+      "description": "Phone Link integration. Keep these if you use Link to Windows on a PC."
+    },
+    {
+      "id": "aosp",
+      "name": "Android / AOSP",
+      "description": "Optional AOSP components: printing, accessibility extras, engineering tools and legacy providers."
+    },
+    {
+      "id": "qualcomm",
+      "name": "Qualcomm",
+      "description": "Qualcomm test frameworks, telemetry and legacy services. On a retail phone almost all of them are unused."
+    },
+    {
+      "id": "oneplus",
+      "name": "OnePlus / Oplus Bloat",
+      "description": "OxygenOS apps, AI features, telemetry and system services. The largest group - CAUTION and RISKY entries here can remove real functionality."
+    }
+  ],
+  "packages": [
+    {
+      "package": "com.amazon.appmanager",
+      "title": "Amazon preload helper",
+      "description": "Amazon preload helper",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "3rd-party",
+      "note": ""
+    },
+    {
+      "package": "com.amazon.mShop.android.shopping",
+      "title": "Amazon Shopping",
+      "description": "Amazon Shopping",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "3rd-party",
+      "note": ""
+    },
+    {
+      "package": "com.facebook.katana",
+      "title": "Facebook",
+      "description": "Facebook",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "3rd-party",
+      "note": ""
+    },
+    {
+      "package": "com.facebook.orca",
+      "title": "Messenger",
+      "description": "Messenger",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "3rd-party",
+      "note": ""
+    },
+    {
+      "package": "com.facebook.appmanager",
+      "title": "Facebook App Manager",
+      "description": "Facebook App Manager (background updater)",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "3rd-party",
+      "note": "Background updater"
+    },
+    {
+      "package": "com.facebook.services",
+      "title": "Facebook background services",
+      "description": "Facebook background services",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "3rd-party",
+      "note": ""
+    },
+    {
+      "package": "com.facebook.system",
+      "title": "Facebook installer stub",
+      "description": "Facebook installer stub",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "3rd-party",
+      "note": ""
+    },
+    {
+      "package": "com.instagram.android",
+      "title": "Instagram stub",
+      "description": "Instagram stub",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "3rd-party",
+      "note": ""
+    },
+    {
+      "package": "com.linkedin.android",
+      "title": "LinkedIn stub",
+      "description": "LinkedIn stub",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "3rd-party",
+      "note": ""
+    },
+    {
+      "package": "com.netflix.mediaclient",
+      "title": "Netflix stub",
+      "description": "Netflix stub",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "3rd-party",
+      "note": ""
+    },
+    {
+      "package": "com.fitbit.FitbitMobile",
+      "title": "Fitbit",
+      "description": "Fitbit",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "3rd-party",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.apps.chromecast.app",
+      "title": "Google Home",
+      "description": "Google Home (casting still works via GMS)",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "google",
+      "note": "Casting still works via GMS"
+    },
+    {
+      "package": "com.google.android.apps.docs",
+      "title": "Google Drive",
+      "description": "Google Drive",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.apps.subscriptions.red",
+      "title": "Google One",
+      "description": "Google One",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.apps.youtube.music",
+      "title": "YouTube Music",
+      "description": "YouTube Music",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.videos",
+      "title": "Google TV / Movies",
+      "description": "Google TV / Movies",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.apps.adm",
+      "title": "Find My Device",
+      "description": "Find My Device (web tracking still works)",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "google",
+      "note": "Web tracking still works"
+    },
+    {
+      "package": "com.google.android.apps.tachyon",
+      "title": "Google Meet / Duo",
+      "description": "Google Meet / Duo",
+      "level": "safe",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.apps.nbu.files",
+      "title": "Files by Google",
+      "description": "Files by Google (OnePlus Files remains)",
+      "level": "safe",
+      "action": "disable",
+      "category": "google",
+      "note": "OnePlus Files remains"
+    },
+    {
+      "package": "com.google.ambient.streaming",
+      "title": "App streaming to Chromebook",
+      "description": "App streaming to Chromebook",
+      "level": "safe",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.ar.lens",
+      "title": "Google Lens standalone app",
+      "description": "Google Lens standalone app",
+      "level": "safe",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.feedback",
+      "title": "Market Feedback Agent",
+      "description": "Market Feedback Agent",
+      "level": "safe",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.printservice.recommendation",
+      "title": "Print plugin suggestions",
+      "description": "Print plugin suggestions",
+      "level": "safe",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.onetimeinitializer",
+      "title": "First-boot initializer",
+      "description": "First-boot initializer",
+      "level": "safe",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.gms.location.history",
+      "title": "Location History stub",
+      "description": "Location History stub (icon only)",
+      "level": "safe",
+      "action": "disable",
+      "category": "google",
+      "note": "Icon only"
+    },
+    {
+      "package": "com.google.android.accessibility.switchaccess",
+      "title": "Switch Access",
+      "description": "Switch Access (accessibility)",
+      "level": "safe",
+      "action": "disable",
+      "category": "google",
+      "note": "Accessibility"
+    },
+    {
+      "package": "com.google.android.federatedcompute",
+      "title": "Federated learning / ad personalisation",
+      "description": "Federated learning / ad personalisation",
+      "level": "safe",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.ondevicepersonalization.services",
+      "title": "On-device personalisation",
+      "description": "On-device personalisation (Privacy Sandbox)",
+      "level": "safe",
+      "action": "disable",
+      "category": "google",
+      "note": "Privacy Sandbox"
+    },
+    {
+      "package": "com.google.android.devicelockcontroller",
+      "title": "Device Lock",
+      "description": "Device Lock (carrier instalment-plan lock)",
+      "level": "safe",
+      "action": "disable",
+      "category": "google",
+      "note": "Carrier instalment-plan lock"
+    },
+    {
+      "package": "com.microsoft.appmanager",
+      "title": "Link to Windows",
+      "description": "Link to Windows (keep if you use Phone Link)",
+      "level": "safe",
+      "action": "disable",
+      "category": "microsoft",
+      "note": "Keep if you use Phone Link"
+    },
+    {
+      "package": "com.microsoft.deviceintegrationservice",
+      "title": "Link to Windows helper service",
+      "description": "Link to Windows helper service",
+      "level": "safe",
+      "action": "disable",
+      "category": "microsoft",
+      "note": ""
+    },
+    {
+      "package": "com.microsoftsdk.crossdeviceservicebroker",
+      "title": "Link to Windows broker",
+      "description": "Link to Windows broker",
+      "level": "safe",
+      "action": "disable",
+      "category": "microsoft",
+      "note": ""
+    },
+    {
+      "package": "com.android.avatarpicker",
+      "title": "User avatar picker",
+      "description": "User avatar picker",
+      "level": "safe",
+      "action": "disable",
+      "category": "aosp",
+      "note": ""
+    },
+    {
+      "package": "com.android.bluetoothmidiservice",
+      "title": "Bluetooth MIDI service",
+      "description": "Bluetooth MIDI service",
+      "level": "safe",
+      "action": "disable",
+      "category": "aosp",
+      "note": ""
+    },
+    {
+      "package": "com.android.bookmarkprovider",
+      "title": "Legacy bookmark provider",
+      "description": "Legacy bookmark provider",
+      "level": "safe",
+      "action": "disable",
+      "category": "aosp",
+      "note": ""
+    },
+    {
+      "package": "com.android.dynsystem",
+      "title": "Dynamic System Updates",
+      "description": "Dynamic System Updates (GSI)",
+      "level": "safe",
+      "action": "disable",
+      "category": "aosp",
+      "note": "GSI"
+    },
+    {
+      "package": "com.android.egg",
+      "title": "Android Easter egg",
+      "description": "Android Easter egg",
+      "level": "safe",
+      "action": "disable",
+      "category": "aosp",
+      "note": ""
+    },
+    {
+      "package": "com.android.email.partnerprovider",
+      "title": "Partner e-mail provider",
+      "description": "Partner e-mail provider",
+      "level": "safe",
+      "action": "disable",
+      "category": "aosp",
+      "note": ""
+    },
+    {
+      "package": "com.android.providers.partnerbookmarks",
+      "title": "Partner bookmarks in browser",
+      "description": "Partner bookmarks in browser",
+      "level": "safe",
+      "action": "disable",
+      "category": "aosp",
+      "note": ""
+    },
+    {
+      "package": "com.android.providers.downloads.ui",
+      "title": "Downloads app UI",
+      "description": "Downloads app UI (downloads still work)",
+      "level": "safe",
+      "action": "disable",
+      "category": "aosp",
+      "note": "Downloads still work"
+    },
+    {
+      "package": "com.android.systemui.accessibility.accessibilitymenu",
+      "title": "Accessibility floating menu",
+      "description": "Accessibility floating menu",
+      "level": "safe",
+      "action": "disable",
+      "category": "aosp",
+      "note": ""
+    },
+    {
+      "package": "com.android.traceur",
+      "title": "System tracing tool",
+      "description": "System tracing tool (engineering)",
+      "level": "safe",
+      "action": "disable",
+      "category": "aosp",
+      "note": "Engineering"
+    },
+    {
+      "package": "com.qti.qcc",
+      "title": "Qualcomm logging/test framework",
+      "description": "Qualcomm logging/test framework",
+      "level": "safe",
+      "action": "disable",
+      "category": "qualcomm",
+      "note": ""
+    },
+    {
+      "package": "com.qualcomm.atfwd",
+      "title": "Qualcomm AT-forwarder",
+      "description": "Qualcomm AT-forwarder (legacy)",
+      "level": "safe",
+      "action": "disable",
+      "category": "qualcomm",
+      "note": "Legacy"
+    },
+    {
+      "package": "com.qualcomm.qti.xrvd.service",
+      "title": "Qualcomm XRVD test service",
+      "description": "Qualcomm XRVD test service",
+      "level": "safe",
+      "action": "disable",
+      "category": "qualcomm",
+      "note": ""
+    },
+    {
+      "package": "com.qualcomm.qti.uimGbaApp",
+      "title": "UIM/GBA for R-UIM cards",
+      "description": "UIM/GBA for R-UIM cards (legacy)",
+      "level": "safe",
+      "action": "disable",
+      "category": "qualcomm",
+      "note": "Legacy"
+    },
+    {
+      "package": "com.wapi.wapicertmanage",
+      "title": "WAPI certificate manager",
+      "description": "WAPI certificate manager (China Wi-Fi std)",
+      "level": "safe",
+      "action": "disable",
+      "category": "qualcomm",
+      "note": "China Wi-Fi std"
+    },
+    {
+      "package": "vendor.qti.data.ntnsatapp",
+      "title": "Qualcomm NTN satellite connectivity",
+      "description": "Qualcomm NTN satellite connectivity",
+      "level": "safe",
+      "action": "disable",
+      "category": "qualcomm",
+      "note": ""
+    },
+    {
+      "package": "andes.oplus.documentsreader",
+      "title": "OnePlus Documents Reader",
+      "description": "OnePlus Documents Reader",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.coloros.translate",
+      "title": "OPPO Translate",
+      "description": "OPPO Translate (system translation)",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "oneplus",
+      "note": "System translation"
+    },
+    {
+      "package": "com.heytap.pictorial",
+      "title": "Pictorial - rotating ads on lock screen",
+      "description": "Pictorial - rotating ads on lock screen",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oneplus.brickmode",
+      "title": "Zen Space",
+      "description": "Zen Space (Zen Mode)",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "oneplus",
+      "note": "Zen Mode"
+    },
+    {
+      "package": "com.oplus.consumerIRApp",
+      "title": "IR blaster remote",
+      "description": "IR blaster remote (keep if you use IR)",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "oneplus",
+      "note": "Keep if you use IR"
+    },
+    {
+      "package": "com.oplus.riderMode",
+      "title": "Rider Mode",
+      "description": "Rider Mode",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "net.oneplus.forums",
+      "title": "OnePlus Community Forum app",
+      "description": "OnePlus Community Forum app",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "net.oneplus.widget",
+      "title": "OnePlus Widgets",
+      "description": "OnePlus Widgets",
+      "level": "safe",
+      "action": "uninstall",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.nearme.instant.platform",
+      "title": "Instant / Quick Apps platform",
+      "description": "Instant / Quick Apps platform",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.heytap.browser",
+      "title": "HeyTap Browser",
+      "description": "HeyTap Browser (may reject disable: Oplus lock)",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "May reject disable: Oplus lock"
+    },
+    {
+      "package": "com.coloros.accessibilityassistant",
+      "title": "Colour correction / accessibility",
+      "description": "Colour correction / accessibility (OnePlus)",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "OnePlus"
+    },
+    {
+      "package": "com.coloros.activation",
+      "title": "e-Warranty",
+      "description": "e-Warranty (China only)",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "China only"
+    },
+    {
+      "package": "com.coloros.bootreg",
+      "title": "Warranty registration",
+      "description": "Warranty registration (China only)",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "China only"
+    },
+    {
+      "package": "com.coloros.childrenspace",
+      "title": "Kids Space",
+      "description": "Kids Space",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.coloros.compass2",
+      "title": "Compass app",
+      "description": "Compass app",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.coloros.operationManual",
+      "title": "Device user manual",
+      "description": "Device user manual",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.coloros.scenemode",
+      "title": "Simple/Easy Mode",
+      "description": "Simple/Easy Mode",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.coloros.systemclone",
+      "title": "Clone Phone",
+      "description": "Clone Phone (data migration)",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Data migration"
+    },
+    {
+      "package": "com.coloros.video",
+      "title": "OnePlus Video app",
+      "description": "OnePlus Video app",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.bttestmode",
+      "title": "Bluetooth engineering test",
+      "description": "Bluetooth engineering test",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.engineercamera",
+      "title": "Engineer camera test",
+      "description": "Engineer camera test",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.engineermode",
+      "title": "Engineer mode",
+      "description": "Engineer mode (*#800#)",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "*#800#"
+    },
+    {
+      "package": "com.oplus.engineernetwork",
+      "title": "Engineer network test",
+      "description": "Engineer network test",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.nfcengineertest",
+      "title": "NFC engineering test",
+      "description": "NFC engineering test",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.logkit",
+      "title": "LogKit",
+      "description": "LogKit (device logs / telemetry)",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Device logs / telemetry"
+    },
+    {
+      "package": "com.oplus.olc",
+      "title": "Oplus Log Collector",
+      "description": "Oplus Log Collector (telemetry)",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Telemetry"
+    },
+    {
+      "package": "com.oplus.onetrace",
+      "title": "OneTrace",
+      "description": "OneTrace (tracing / telemetry)",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Tracing / telemetry"
+    },
+    {
+      "package": "com.oplus.statistics.rom",
+      "title": "DCS: ROM telemetry",
+      "description": "DCS: ROM telemetry",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.postmanservice",
+      "title": "Postman: remote diagnostics / feedback",
+      "description": "Postman: remote diagnostics / feedback",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.healthservice",
+      "title": "Step counter for Oplus Health",
+      "description": "Step counter for Oplus Health",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.eid",
+      "title": "Chinese eID service",
+      "description": "Chinese eID service",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.upgradeguide",
+      "title": "What's new / upgrade guide",
+      "description": "What's new / upgrade guide",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.voice.crs",
+      "title": "CN: video colour ring-back tone",
+      "description": "CN: video colour ring-back tone",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.wifibackuprestore",
+      "title": "Wi-Fi backup / restore",
+      "description": "Wi-Fi backup / restore (migration)",
+      "level": "safe",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Migration"
+    },
+    {
+      "package": "android.autoinstalls.config.oneplus",
+      "title": "Auto-install config for partner apps",
+      "description": "Auto-install config for partner apps (setup only)",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": "Setup only"
+    },
+    {
+      "package": "com.android.apps.tag",
+      "title": "NFC tag reader",
+      "description": "NFC tag reader (payments still work, tag scanning won't)",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": "Payments still work, tag scanning won't"
+    },
+    {
+      "package": "com.android.bips",
+      "title": "Built-in print service",
+      "description": "Built-in print service",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": ""
+    },
+    {
+      "package": "com.android.printspooler",
+      "title": "Print spooler",
+      "description": "Print spooler (disable with bips)",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": "Disable with bips"
+    },
+    {
+      "package": "com.android.calllogbackup",
+      "title": "Call log backup",
+      "description": "Call log backup (reports of broken call recording)",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": "Reports of broken call recording"
+    },
+    {
+      "package": "com.android.cameraextensions",
+      "title": "Camera extensions for 3rd-party apps",
+      "description": "Camera extensions for 3rd-party apps (night/portrait/HDR)",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": "Night/portrait/HDR"
+    },
+    {
+      "package": "com.android.carrierdefaultapp",
+      "title": "Carrier portal",
+      "description": "Carrier portal (no data / roaming screens)",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": "No data / roaming screens"
+    },
+    {
+      "package": "com.android.chrome",
+      "title": "Chrome",
+      "description": "Chrome (only if you have another browser)",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": "Only if you have another browser"
+    },
+    {
+      "package": "com.android.DeviceAsWebcam",
+      "title": "Phone as USB webcam",
+      "description": "Phone as USB webcam",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": ""
+    },
+    {
+      "package": "com.android.dreams.basic",
+      "title": "Screensaver",
+      "description": "Screensaver (OP10P: needed for full AOD)",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": "OP10P: needed for full AOD"
+    },
+    {
+      "package": "com.android.emergency",
+      "title": "Emergency info on lock screen",
+      "description": "Emergency info on lock screen",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": ""
+    },
+    {
+      "package": "com.android.hotwordenrollment.okgoogle",
+      "title": "OK Google wake-word training",
+      "description": "OK Google wake-word training",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": ""
+    },
+    {
+      "package": "com.android.hotwordenrollment.xgoogle",
+      "title": "OK Google wake-word training",
+      "description": "OK Google wake-word training (variant)",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": "Variant"
+    },
+    {
+      "package": "com.android.htmlviewer",
+      "title": "Local HTML file viewer",
+      "description": "Local HTML file viewer",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": ""
+    },
+    {
+      "package": "com.android.musicfx",
+      "title": "System equalizer",
+      "description": "System equalizer",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": ""
+    },
+    {
+      "package": "com.android.sharedstoragebackup",
+      "title": "Shared storage backup",
+      "description": "Shared storage backup",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": ""
+    },
+    {
+      "package": "com.android.simappdialog",
+      "title": "SIM app suggestions on insert",
+      "description": "SIM app suggestions on insert",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": ""
+    },
+    {
+      "package": "com.android.stk",
+      "title": "SIM Toolkit",
+      "description": "SIM Toolkit (carrier menu)",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": "Carrier menu"
+    },
+    {
+      "package": "com.android.wallpaper.livepicker",
+      "title": "Live wallpaper picker",
+      "description": "Live wallpaper picker",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": ""
+    },
+    {
+      "package": "com.android.wallpaperbackup",
+      "title": "Wallpaper backup",
+      "description": "Wallpaper backup",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": ""
+    },
+    {
+      "package": "com.android.microdroid.empty_payload",
+      "title": "Virtualisation placeholder",
+      "description": "Virtualisation placeholder (AVF)",
+      "level": "caution",
+      "action": "disable",
+      "category": "aosp",
+      "note": "AVF"
+    },
+    {
+      "package": "com.fido.asm",
+      "title": "FIDO ASM",
+      "description": "FIDO ASM (biometric login in some apps)",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": "Biometric login in some apps"
+    },
+    {
+      "package": "com.fido.fido2client",
+      "title": "FIDO2 client",
+      "description": "FIDO2 client (passkeys)",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": "Passkeys"
+    },
+    {
+      "package": "com.fido.uafclient",
+      "title": "FIDO UAF client",
+      "description": "FIDO UAF client",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.adservices.api",
+      "title": "Ad Services",
+      "description": "Ad Services (disabling removes Advertising ID option)",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": "Disabling removes Advertising ID option"
+    },
+    {
+      "package": "com.google.mainline.adservices",
+      "title": "AdServices module version marker",
+      "description": "AdServices module version marker",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.mainline.telemetry",
+      "title": "Reports mainline module versions to Play",
+      "description": "Reports mainline module versions to Play (may affect module updates)",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": "May affect module updates"
+    },
+    {
+      "package": "com.google.android.aicore",
+      "title": "AICore - Gemini Nano on-device",
+      "description": "AICore - Gemini Nano on-device",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.apps.bard",
+      "title": "Gemini app",
+      "description": "Gemini app (Mind Space links to Gemini)",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": "Mind Space links to Gemini"
+    },
+    {
+      "package": "com.google.android.apps.maps",
+      "title": "Google Maps",
+      "description": "Google Maps",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.apps.photos",
+      "title": "Google Photos",
+      "description": "Google Photos (check backup first!)",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": "Check backup first!"
+    },
+    {
+      "package": "com.google.android.apps.restore",
+      "title": "Restore wizard",
+      "description": "Restore wizard (disabling may break Settings factory reset)",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": "Disabling may break Settings factory reset"
+    },
+    {
+      "package": "com.google.android.apps.safetyhub",
+      "title": "Personal Safety",
+      "description": "Personal Safety (crash detection, SOS)",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": "Crash detection, SOS"
+    },
+    {
+      "package": "com.google.android.apps.walletnfcrel",
+      "title": "Google Wallet - NFC payments",
+      "description": "Google Wallet - NFC payments",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.apps.wellbeing",
+      "title": "Digital Wellbeing",
+      "description": "Digital Wellbeing (screen time, Bedtime)",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": "Screen time, Bedtime"
+    },
+    {
+      "package": "com.google.android.apps.work.clouddpc",
+      "title": "Android Device Policy",
+      "description": "Android Device Policy (MDM/Intune)",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": "MDM/Intune"
+    },
+    {
+      "package": "com.google.android.calendar",
+      "title": "Google Calendar",
+      "description": "Google Calendar (only calendar in system)",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": "Only calendar in system"
+    },
+    {
+      "package": "com.google.android.captiveportallogin",
+      "title": "Captive portal login",
+      "description": "Captive portal login (hotel/airport Wi-Fi)",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": "Hotel/airport Wi-Fi"
+    },
+    {
+      "package": "com.google.android.euicc",
+      "title": "eSIM support",
+      "description": "eSIM support (keep if you use eSIM)",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": "Keep if you use eSIM"
+    },
+    {
+      "package": "com.google.android.gm",
+      "title": "Gmail",
+      "description": "Gmail",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.googlequicksearchbox",
+      "title": "Google app - Assistant, Discover, Circle to Search",
+      "description": "Google app - Assistant, Discover, Circle to Search",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.marvin.talkback",
+      "title": "TalkBack / Android Accessibility Suite",
+      "description": "TalkBack / Android Accessibility Suite",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.odad",
+      "title": "On-Device Anomaly Detection",
+      "description": "On-Device Anomaly Detection (security)",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": "Security"
+    },
+    {
+      "package": "com.google.android.partnersetup",
+      "title": "Google Partner Setup",
+      "description": "Google Partner Setup",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.projection.gearhead",
+      "title": "Android Auto",
+      "description": "Android Auto",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.tts",
+      "title": "Google TTS",
+      "description": "Google TTS (navigation voice, read aloud)",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": "Navigation voice, read aloud"
+    },
+    {
+      "package": "com.google.android.youtube",
+      "title": "YouTube",
+      "description": "YouTube",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.google.ar.core",
+      "title": "Google AR Services",
+      "description": "Google AR Services",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": ""
+    },
+    {
+      "package": "com.mediatek.omacp",
+      "title": "OMA CP: auto-configure APN/MMS via SMS",
+      "description": "OMA CP: auto-configure APN/MMS via SMS",
+      "level": "caution",
+      "action": "disable",
+      "category": "qualcomm",
+      "note": ""
+    },
+    {
+      "package": "com.qti.dcf",
+      "title": "Qualcomm: BT sharing helper",
+      "description": "Qualcomm: BT sharing helper",
+      "level": "caution",
+      "action": "disable",
+      "category": "qualcomm",
+      "note": ""
+    },
+    {
+      "package": "com.qualcomm.uimremoteclient",
+      "title": "Remote UIM client",
+      "description": "Remote UIM client",
+      "level": "caution",
+      "action": "disable",
+      "category": "qualcomm",
+      "note": ""
+    },
+    {
+      "package": "com.qualcomm.uimremoteserver",
+      "title": "Remote UIM server",
+      "description": "Remote UIM server",
+      "level": "caution",
+      "action": "disable",
+      "category": "qualcomm",
+      "note": ""
+    },
+    {
+      "package": "com.qualcomm.wfd.service",
+      "title": "Miracast / Wi-Fi Display",
+      "description": "Miracast / Wi-Fi Display",
+      "level": "caution",
+      "action": "disable",
+      "category": "qualcomm",
+      "note": ""
+    },
+    {
+      "package": "com.qualcomm.qti.qms.service.trustzoneaccess",
+      "title": "Qualcomm TrustZone quality logging",
+      "description": "Qualcomm TrustZone quality logging",
+      "level": "caution",
+      "action": "disable",
+      "category": "qualcomm",
+      "note": ""
+    },
+    {
+      "package": "com.oneplus.backuprestore",
+      "title": "Local backup and restore",
+      "description": "Local backup and restore",
+      "level": "caution",
+      "action": "uninstall",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oneplus.note",
+      "title": "OnePlus Notes",
+      "description": "OnePlus Notes (screenshot notes)",
+      "level": "caution",
+      "action": "uninstall",
+      "category": "oneplus",
+      "note": "Screenshot notes"
+    },
+    {
+      "package": "com.oneplus.soundrecorder",
+      "title": "Voice Recorder",
+      "description": "Voice Recorder (Live Alert for recording)",
+      "level": "caution",
+      "action": "uninstall",
+      "category": "oneplus",
+      "note": "Live Alert for recording"
+    },
+    {
+      "package": "com.oneplus.filemanager",
+      "title": "OnePlus Files",
+      "description": "OnePlus Files (some folder access)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Some folder access"
+    },
+    {
+      "package": "com.oneplus.gallery",
+      "title": "OnePlus Gallery",
+      "description": "OnePlus Gallery (camera opens it, Live Photo, filter editing)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Camera opens it, Live Photo, filter editing"
+    },
+    {
+      "package": "com.oneplus.oshare",
+      "title": "O+ Share",
+      "description": "O+ Share (cross-OnePlus file transfer)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Cross-OnePlus file transfer"
+    },
+    {
+      "package": "com.oneplus.account",
+      "title": "OnePlus Account",
+      "description": "OnePlus Account (sign out BEFORE disabling!)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Sign out BEFORE disabling!"
+    },
+    {
+      "package": "com.coloros.assistantscreen",
+      "title": "Shelf",
+      "description": "Shelf (left-side screen)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Left-side screen"
+    },
+    {
+      "package": "com.coloros.floatassistant",
+      "title": "Floating ball / floating windows",
+      "description": "Floating ball / floating windows (one unconfirmed report: Live Alert link)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "One unconfirmed report: Live Alert link"
+    },
+    {
+      "package": "com.coloros.ocrscanner",
+      "title": "OCR scanner",
+      "description": "OCR scanner (copy text from images)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Copy text from images"
+    },
+    {
+      "package": "com.coloros.ocs.opencapabilityservice",
+      "title": "Open Capability Service",
+      "description": "Open Capability Service (debatable reputation)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Debatable reputation"
+    },
+    {
+      "package": "com.coloros.smartsidebar",
+      "title": "Smart Sidebar / File Dock",
+      "description": "Smart Sidebar / File Dock",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.globaldrag.dragplugin",
+      "title": "Global Drag & Drop",
+      "description": "Global Drag & Drop (part of Smart Sidebar)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Part of Smart Sidebar"
+    },
+    {
+      "package": "com.heytap.accessory",
+      "title": "Accessory quick connect",
+      "description": "Accessory quick connect (known battery drain)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Known battery drain"
+    },
+    {
+      "package": "com.heytap.mcs",
+      "title": "Oplus push service",
+      "description": "Oplus push service (DroidWin: battery drain)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "DroidWin: battery drain"
+    },
+    {
+      "package": "com.heytap.mydevices",
+      "title": "My Devices",
+      "description": "My Devices (Buds, Pad, Watch)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Buds, Pad, Watch"
+    },
+    {
+      "package": "com.oplus.aicall",
+      "title": "AI Call Assistant",
+      "description": "AI Call Assistant (call summaries / translation)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Call summaries / translation"
+    },
+    {
+      "package": "com.oplus.aimemory",
+      "title": "Mind Space / Plus Mind",
+      "description": "Mind Space / Plus Mind (default Plus Key function)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Default Plus Key function"
+    },
+    {
+      "package": "com.oplus.aiwriter",
+      "title": "AI Writer",
+      "description": "AI Writer",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.apprecover",
+      "title": "System app recovery",
+      "description": "System app recovery (MDSService)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "MDSService"
+    },
+    {
+      "package": "com.oplus.atlas",
+      "title": "Atlas AI backend",
+      "description": "Atlas AI backend",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.audio.effectcenter",
+      "title": "Audio Effect Centre - Dolby Atmos / EQ",
+      "description": "Audio Effect Centre - Dolby Atmos / EQ",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.beaconlink",
+      "title": "BLE accessory detection",
+      "description": "BLE accessory detection (BeaconLink)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "BeaconLink"
+    },
+    {
+      "package": "com.oplus.cast",
+      "title": "HeyCast - screen mirroring to TV",
+      "description": "HeyCast - screen mirroring to TV",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.dfs",
+      "title": "DFS - distributed file system between devices",
+      "description": "DFS - distributed file system between devices",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.dmp",
+      "title": "DMP - unclear role; no issues reported on OP13/15",
+      "description": "DMP - unclear role; no issues reported on OP13/15",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.encryption",
+      "title": "Private Safe",
+      "description": "Private Safe (encrypted file vault)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Encrypted file vault"
+    },
+    {
+      "package": "com.oplus.eyeprotect",
+      "title": "Eye comfort / reading mode",
+      "description": "Eye comfort / reading mode",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.gleanerservice",
+      "title": "Gleaner - data collection service",
+      "description": "Gleaner - data collection service",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.games",
+      "title": "Game Assistant",
+      "description": "Game Assistant (game mode, FPS, DND)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Game mode, FPS, DND"
+    },
+    {
+      "package": "com.oplus.lfeh",
+      "title": "LFEH - part of Game Assistant",
+      "description": "LFEH - part of Game Assistant",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.linker",
+      "title": "O+ Connect",
+      "description": "O+ Connect (PC / tablet link)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "PC / tablet link"
+    },
+    {
+      "package": "com.oplus.location",
+      "title": "Oplus location extras",
+      "description": "Oplus location extras (not GPS)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Not GPS"
+    },
+    {
+      "package": "com.oplus.locationproxy",
+      "title": "Oplus location proxy",
+      "description": "Oplus location proxy (not GPS)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Not GPS"
+    },
+    {
+      "package": "com.oplus.mediaturbo",
+      "title": "Media Turbo",
+      "description": "Media Turbo (video/audio upscaling)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Video/audio upscaling"
+    },
+    {
+      "package": "com.oplus.melody",
+      "title": "OnePlus Buds / HeyMelody companion",
+      "description": "OnePlus Buds / HeyMelody companion",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.metis",
+      "title": "Metis - smart suggestions engine",
+      "description": "Metis - smart suggestions engine (may touch Mind Space)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "May touch Mind Space"
+    },
+    {
+      "package": "com.oplus.motionsense",
+      "title": "Motion sensors",
+      "description": "Motion sensors (raise-to-wake etc.)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Raise-to-wake etc."
+    },
+    {
+      "package": "com.oplus.multiapp",
+      "title": "Parallel apps",
+      "description": "Parallel apps (app cloning)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "App cloning"
+    },
+    {
+      "package": "com.oplus.nhs",
+      "title": "Network Health Service",
+      "description": "Network Health Service",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.obrain",
+      "title": "OBrain - AI task planning",
+      "description": "OBrain - AI task planning",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.powermonitor",
+      "title": "Power monitor",
+      "description": "Power monitor (may feed battery stats)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "May feed battery stats"
+    },
+    {
+      "package": "com.oplus.safecenter",
+      "title": "Safe Centre / Private Safe",
+      "description": "Safe Centre / Private Safe",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.sauhelper",
+      "title": "Auto-update helper for Oplus apps",
+      "description": "Auto-update helper for Oplus apps (update notifications remain)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Update notifications remain"
+    },
+    {
+      "package": "com.oplus.screenrecorder",
+      "title": "Screen recorder",
+      "description": "Screen recorder (Live Alert for recording)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Live Alert for recording"
+    },
+    {
+      "package": "com.oplus.securepay",
+      "title": "Secure Pay",
+      "description": "Secure Pay (anti-fraud layer for payments)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Anti-fraud layer for payments"
+    },
+    {
+      "package": "com.oplus.securitykeyboard",
+      "title": "Secure keyboard",
+      "description": "Secure keyboard (PIN in payment screens)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "PIN in payment screens"
+    },
+    {
+      "package": "com.oplus.trafficmonitor",
+      "title": "Traffic / data usage monitor",
+      "description": "Traffic / data usage monitor",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.vdc",
+      "title": "VDC service - unclear; no issues on 12R/13R",
+      "description": "VDC service - unclear; no issues on 12R/13R",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oppo.quicksearchbox",
+      "title": "Oplus global search in launcher",
+      "description": "Oplus global search in launcher",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.as",
+      "title": "Android System Intelligence",
+      "description": "Android System Intelligence (OP10P: needed for full AOD)",
+      "level": "risky",
+      "action": "disable",
+      "category": "aosp",
+      "note": "OP10P: needed for full AOD"
+    },
+    {
+      "package": "com.google.android.as.oss",
+      "title": "Private Compute Services",
+      "description": "Private Compute Services (may be needed for AOD)",
+      "level": "risky",
+      "action": "disable",
+      "category": "aosp",
+      "note": "May be needed for AOD"
+    },
+    {
+      "package": "com.qti.qualcomm.datastatusnotification",
+      "title": "Data limit notifications",
+      "description": "Data limit notifications",
+      "level": "risky",
+      "action": "disable",
+      "category": "qualcomm",
+      "note": ""
+    },
+    {
+      "package": "com.qualcomm.qti.devicestatisticsservice",
+      "title": "Qualcomm device statistics",
+      "description": "Qualcomm device statistics",
+      "level": "risky",
+      "action": "disable",
+      "category": "qualcomm",
+      "note": ""
+    },
+    {
+      "package": "com.qualcomm.qti.powersavemode",
+      "title": "Qualcomm power save mode service",
+      "description": "Qualcomm power save mode service",
+      "level": "risky",
+      "action": "disable",
+      "category": "qualcomm",
+      "note": ""
+    },
+    {
+      "package": "com.qualcomm.qti.workloadclassifier",
+      "title": "Qualcomm workload classifier",
+      "description": "Qualcomm workload classifier (performance)",
+      "level": "risky",
+      "action": "disable",
+      "category": "qualcomm",
+      "note": "Performance"
+    },
+    {
+      "package": "com.qualcomm.qti.xrcb",
+      "title": "Broadcast radio receiver - may affect RCB emergency alerts",
+      "description": "Broadcast radio receiver - may affect RCB emergency alerts",
+      "level": "risky",
+      "action": "disable",
+      "category": "qualcomm",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.aiunit",
+      "title": "AI Service Engine 91MB - backend for OCR/translation/AI; may affect camera and Circle to Search",
+      "description": "AI Service Engine 91MB - backend for OCR/translation/AI; may affect camera and Circle to Search",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.aiunit.aon",
+      "title": "AON - always-on sensors for AI features",
+      "description": "AON - always-on sensors for AI features",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.coloros.colordirectservice",
+      "title": "Color Direct Service",
+      "description": "Color Direct Service (quick actions on text/image)",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Quick actions on text/image"
+    },
+    {
+      "package": "com.coloros.lockassistant",
+      "title": "Lock screen assistant",
+      "description": "Lock screen assistant",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.coloros.weather.service",
+      "title": "Weather service",
+      "description": "Weather service (OP10P: needed for AOD / widgets)",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "OP10P: needed for AOD / widgets"
+    },
+    {
+      "package": "net.oneplus.weather",
+      "title": "Weather app",
+      "description": "Weather app (feeds AOD / widgets)",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Feeds AOD / widgets"
+    },
+    {
+      "package": "com.heytap.colorfulengine",
+      "title": "Colourful Engine",
+      "description": "Colourful Engine (lock screen / AOD effects - OP10P: needed for AOD)",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Lock screen / AOD effects - OP10P: needed for AOD"
+    },
+    {
+      "package": "com.heytap.htms",
+      "title": "HeyTap Mobile Services - role unclear",
+      "description": "HeyTap Mobile Services - role unclear",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.appsense",
+      "title": "App usage detection",
+      "description": "App usage detection (preload / prediction)",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Preload / prediction"
+    },
+    {
+      "package": "com.oplus.athena",
+      "title": "Athena - background app and battery manager",
+      "description": "Athena - background app and battery manager",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.cell.map",
+      "title": "Cell map",
+      "description": "Cell map (network)",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Network"
+    },
+    {
+      "package": "com.oplus.cellularqoe",
+      "title": "Cellular quality of experience",
+      "description": "Cellular quality of experience",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.contentportal",
+      "title": "Content Portal",
+      "description": "Content Portal (content aggregation)",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Content aggregation"
+    },
+    {
+      "package": "com.oplus.cosa",
+      "title": "COSA - app / game performance; OP10P: needed for AOD",
+      "description": "COSA - app / game performance; OP10P: needed for AOD",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.cota",
+      "title": "Carrier OTA config",
+      "description": "Carrier OTA config (VoLTE / APN updates)",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "VoLTE / APN updates"
+    },
+    {
+      "package": "com.oplus.deepthinker",
+      "title": "DeepThinker - intelligent services; OP10P: needed for AOD",
+      "description": "DeepThinker - intelligent services; OP10P: needed for AOD",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.gesture",
+      "title": "Gesture UI service",
+      "description": "Gesture UI service",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.nas",
+      "title": "Network Assist - smart Wi-Fi/LTE switching",
+      "description": "Network Assist - smart Wi-Fi/LTE switching",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.networksense",
+      "title": "Network Sense service",
+      "description": "Network Sense service",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.sense.netprediction",
+      "title": "Network quality prediction",
+      "description": "Network quality prediction",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.sense.netscore",
+      "title": "Network score",
+      "description": "Network score",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.nwestimate",
+      "title": "Network estimation plugin",
+      "description": "Network estimation plugin",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.tai.borderpresearch",
+      "title": "Border network pre-search",
+      "description": "Border network pre-search",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.tai.wifiqoe",
+      "title": "Wi-Fi quality of experience",
+      "description": "Wi-Fi quality of experience",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.ota",
+      "title": "OTA system updates - disabling = NO MORE UPDATES",
+      "description": "OTA system updates - disabling = NO MORE UPDATES",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.sau",
+      "title": "System App Update service",
+      "description": "System App Update service",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.phonemanager",
+      "title": "Phone Manager",
+      "description": "Phone Manager (cleanup, permissions, scan)",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Cleanup, permissions, scan"
+    },
+    {
+      "package": "com.oplus.pscanvas",
+      "title": "Flexible windows",
+      "description": "Flexible windows (multi-tasking)",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Multi-tasking"
+    },
+    {
+      "package": "com.oplus.securityguard",
+      "title": "Security Guard service",
+      "description": "Security Guard service",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.securitypermission",
+      "title": "Oplus permissions",
+      "description": "Oplus permissions (autostart etc.)",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Autostart etc."
+    },
+    {
+      "package": "com.oplus.smartengine",
+      "title": "SmartEngine; OP10P: needed for AOD",
+      "description": "SmartEngine; OP10P: needed for AOD",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.stdid",
+      "title": "Device identifier (OAID) - needed for Game Assistant",
+      "description": "Device identifier (OAID) - needed for Game Assistant",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.oplus.stdsp",
+      "title": "Related to stdid",
+      "description": "Related to stdid (OAID)",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "OAID"
+    },
+    {
+      "package": "com.oplus.uiengine",
+      "title": "VariUIEngine; OP10P: needed for AOD",
+      "description": "VariUIEngine; OP10P: needed for AOD",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    },
+    {
+      "package": "com.google.android.mosey",
+      "title": "Mosey - Quick Share AWDL/AirDrop backend",
+      "description": "Mosey - Quick Share AWDL/AirDrop backend (disabling breaks cross-platform Quick Share discovery)",
+      "level": "caution",
+      "action": "disable",
+      "category": "google",
+      "note": "Disabling breaks cross-platform Quick Share discovery"
+    },
+    {
+      "package": "com.oplus.ndsf",
+      "title": "DSF - Oplus Distributed Service Framework",
+      "description": "DSF - Oplus Distributed Service Framework (IPC bus for system services)",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "IPC bus for system services"
+    },
+    {
+      "package": "com.oplus.owkservice",
+      "title": "OWK Service - Oplus wakelock monitor",
+      "description": "OWK Service - Oplus wakelock monitor (feeds battery diagnostics)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Feeds battery diagnostics"
+    },
+    {
+      "package": "com.oplus.remotecontrol",
+      "title": "OnePlus TV Remote",
+      "description": "OnePlus TV Remote (control OnePlus TV via Wi-Fi; safe to disable if no OnePlus TV)",
+      "level": "caution",
+      "action": "disable",
+      "category": "oneplus",
+      "note": "Control OnePlus TV via Wi-Fi; safe to disable if no OnePlus TV"
+    },
+    {
+      "package": "com.oplus.sandbox.runtime",
+      "title": "Sandbox Runtime - Oplus mini-app / quick-app isolated execution layer",
+      "description": "Sandbox Runtime - Oplus mini-app / quick-app isolated execution layer",
+      "level": "risky",
+      "action": "disable",
+      "category": "oneplus",
+      "note": ""
+    }
+  ]
+}
