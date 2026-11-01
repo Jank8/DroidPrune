@@ -4,13 +4,12 @@ from __future__ import annotations
 
 import os
 
-from PySide6.QtCore import QTimer
-from PySide6.QtGui import QFont
+from PySide6.QtCore import QTimer, Qt
 from PySide6.QtWidgets import QLabel
 
 from qfluentwidgets import (FluentIcon, FluentWindow, NavigationItemPosition)
 
-from .. import APP_NAME, APP_VERSION
+from .. import APP_NAME, APP_VERSION, REPO_URL
 from ..core.controller import Controller
 from . import dialogs, theme
 from .icon import build_icon
@@ -93,16 +92,32 @@ class MainWindow(FluentWindow):
     # ------------------------------------------------------------- chrome
     def _add_version_label(self) -> None:
         try:
-            label = QLabel(f"v{APP_VERSION}")
-            label.setFont(QFont("Segoe UI", 8))
-            label.setStyleSheet(f"color: {theme.palette().faint.name()};")
+            label = QLabel()
+            label.setTextFormat(Qt.TextFormat.RichText)
+            label.setOpenExternalLinks(True)
+            label.setTextInteractionFlags(
+                Qt.TextInteractionFlag.LinksAccessibleByMouse
+                | Qt.TextInteractionFlag.LinksAccessibleByKeyboard
+            )
+            label.setCursor(Qt.CursorShape.PointingHandCursor)
             label.setContentsMargins(0, 0, 12, 0)
-            label.setToolTip(f"{APP_NAME} {APP_VERSION}")
+            label.setToolTip(f"Open {APP_NAME} on GitHub")
             bar = self.titleBar.hBoxLayout
             bar.insertWidget(max(0, bar.count() - 1), label)
             self._version_label = label
+            self._style_version_label()
         except Exception:
             self._version_label = None
+
+    def _style_version_label(self) -> None:
+        if getattr(self, "_version_label", None) is None:
+            return
+        color = theme.palette().accent_hex
+        self._version_label.setText(
+            f'<a href="{REPO_URL}" style="color:{color};'
+            f'text-decoration:none;">v{APP_VERSION}</a>'
+        )
+        self._version_label.setStyleSheet("font: 600 8pt 'Segoe UI';")
 
     def switch_to(self, name: str) -> None:
         page = self._pages.get(name)
@@ -134,9 +149,7 @@ class MainWindow(FluentWindow):
                 except Exception:
                     pass
         if getattr(self, "_version_label", None) is not None:
-            self._version_label.setStyleSheet(
-                f"color: {theme.palette().faint.name()};"
-            )
+            self._style_version_label()
         self.setWindowIcon(build_icon(256))
 
     # ------------------------------------------------------------ notices
